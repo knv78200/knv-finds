@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "nom": "Phenom elite noir",
+        "categorie": "Bas",
+        "prix": "29€",
+        "image": "images/phenom elite noir.png",
+        "lienBBD": "https://weidian.com/item.html?itemID=7804090546&spider_token=2614",
+        "lienWeidian": "https://weidian.com/item.html?itemID=7804090546&spider_token=2614"
+    }
+]

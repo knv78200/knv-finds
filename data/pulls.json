@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "nom": "PULL",
+        "categorie": "Pull",
+        "prix": "30€",
+        "image": "https://via.placeholder.com/150",
+        "lienBBD": "#",
+        "lienWeidian": "#"
+    }
+]
