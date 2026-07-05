@@ -7,32 +7,59 @@ let produits = [];
 async function chargerDonnees() {
     for (const fichier of fichiersData) {
         try {
+            console.log(`Chargement de : ${fichier}`); // Vous verrez ça dans la console F12
             const reponse = await fetch(`data/${fichier}`);
-            if (!reponse.ok) throw new Error(`Impossible de charger ${fichier}`);
+            if (!reponse.ok) throw new Error(`Erreur HTTP : ${reponse.status}`);
             const data = await reponse.json();
-            // On fusionne les produits dans notre liste globale
             produits = produits.concat(data);
         } catch (err) {
-            console.error(`Erreur lors du chargement de ${fichier}:`, err);
+            console.error(`Erreur critique sur ${fichier}:`, err);
         }
     }
-    // Une fois tout chargé, on affiche les produits
+    console.log("Total produits chargés :", produits.length);
     afficherProduits();
+    mettreAJourMenuSousCategories(); // <--- AJOUTEZ CETTE LIGNE
 }
+
+
+function mettreAJourMenuSousCategories() {
+    const select = document.getElementById("filtreSousCategorie");
+    const categorieActive = document.getElementById("filtreCategorie").value;
+    
+    // On filtre les produits par catégorie avant de lister les sous-catégories
+    const produitsFiltres = categorieActive === "all" 
+        ? produits 
+        : produits.filter(p => p.categorie === categorieActive);
+
+    const sousCats = [...new Set(produitsFiltres.map(p => p.sousCategorie).filter(sc => sc))];
+    
+    select.innerHTML = '<option value="all">Toutes les sous-catégories</option>';
+    sousCats.forEach(sc => {
+        select.innerHTML += `<option value="${sc}">${sc}</option>`;
+    });
+}
+
+// Ajoutez aussi cet écouteur pour rafraîchir les sous-catégories quand on change de catégorie principale
+document.getElementById("filtreCategorie").addEventListener("change", mettreAJourMenuSousCategories);
 
 function afficherProduits() {
     const conteneur = document.getElementById("liste-produits");
     const recherche = document.getElementById("searchInput").value.toLowerCase();
     const categorie = document.getElementById("filtreCategorie").value;
     
-    conteneur.innerHTML = ""; // Vide l'affichage actuel
+    // Récupération sécurisée du filtre de sous-catégorie
+    const sousCatElement = document.getElementById("filtreSousCategorie");
+    const sousCat = sousCatElement ? sousCatElement.value : "all";
+    
+    conteneur.innerHTML = ""; 
 
-    // Filtrage et affichage
-    produits.filter(p => 
-        (categorie === "all" || p.categorie === categorie) &&
-        (p.nom && p.nom.toLowerCase().includes(recherche))
-    ).forEach(p => {
-        // Condition stricte : on n'affiche la carte QUE SI les infos nécessaires sont présentes
+    produits.filter(p => {
+        const matchCategorie = (categorie === "all" || p.categorie === categorie);
+        const matchSousCat = (sousCat === "all" || !p.sousCategorie || p.sousCategorie === sousCat);
+        const matchRecherche = (p.nom && p.nom.toLowerCase().includes(recherche));
+
+        return matchCategorie && matchSousCat && matchRecherche;
+    }).forEach(p => {
         if (!p.nom || !p.image || !p.prix) return; 
 
         conteneur.innerHTML += `
@@ -44,10 +71,18 @@ function afficherProduits() {
             </div>`;
     });
 }
-
 // Lancer le chargement au démarrage
 chargerDonnees();
 
 // Écouteurs d'événements
+// Rafraîchir quand on tape dans la recherche
 document.getElementById("searchInput").addEventListener("input", afficherProduits);
-document.getElementById("filtreCategorie").addEventListener("change", afficherProduits);
+
+// Rafraîchir les produits et le menu quand on change de catégorie
+document.getElementById("filtreCategorie").addEventListener("change", () => {
+    mettreAJourMenuSousCategories();
+    afficherProduits();
+});
+
+// Rafraîchir les produits quand on change de sous-catégorie
+document.getElementById("filtreSousCategorie").addEventListener("change", afficherProduits);

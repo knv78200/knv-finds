@@ -3,6 +3,7 @@
         "id": 1,
         "nom": "TN Triple black",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.00€",
         "image": "images/tn triple black.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7786994836&spider_token=6ccf"
@@ -11,6 +12,7 @@
         "id": 2,
         "nom": "Tn Palm",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.00€",
         "image": "images/tn palm.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7786994836&spider_token=6ccf"
@@ -19,6 +21,7 @@
         "id": 3,
         "nom": "Tn Fireberry",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.00€",
         "image": "images/tn fireberry.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7786994836&spider_token=6ccf"
@@ -27,6 +30,7 @@
         "id": 4,
         "nom": "Tn Black Silver",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.00€",
         "image": "images/tn black silver.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -35,6 +39,7 @@
         "id": 5,
         "nom": "Tn White",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.OO€",
         "image": "images/tn white.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -43,6 +48,7 @@
         "id": 6,
         "nom": "Tn Wolf Grey",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.00€",
         "image": "images/tn wolf grey.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -51,6 +57,7 @@
         "id": 7,
         "nom": "Tn Aqua",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.00€",
         "image": "images/tn aqua.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -59,6 +66,7 @@
         "id": 8,
         "nom": "Tn Supreme White",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.00  €",
         "image": "images/tn supreme white.png",
         "lien BBD": "https://k.youshop10.com/-oC0bUk2"
@@ -67,6 +75,7 @@
         "id": 9,
         "nom": "Tn Black Silver White",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.00  €",
         "image": "images/tn black silver white.png",
         "lien BBD": "https://k.youshop10.com/-oC0bUk2"
@@ -75,6 +84,7 @@
         "id": 10,
         "nom": "Tn Black Dusty Cactus",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.00  €",
         "image": "images/tn noir dusty cactus.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -83,6 +93,7 @@
         "id": 11,
         "nom": "Tn Black Green Strike",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.00  €",
         "image": "images/tn black green strike.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -91,6 +102,7 @@
         "id": 12,
         "nom": "Tn Light Liquid Lime",
         "categorie": "Chaussures",
+        "sousCategorie": "TN",
         "prix": "41.00  €",
         "image": "images/tn light liquid lime.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
