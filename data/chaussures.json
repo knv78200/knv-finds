@@ -3,7 +3,7 @@
         "id": 1,
         "nom": "TN Triple black",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00€",
         "image": "imagesc/tn triple black.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7786994836&spider_token=6ccf"
@@ -12,7 +12,7 @@
         "id": 2,
         "nom": "Tn Palm",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00€",
         "image": "imagesc/tn palm.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7786994836&spider_token=6ccf"
@@ -21,7 +21,7 @@
         "id": 3,
         "nom": "Tn Fireberry",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00€",
         "image": "imagesc/tn fireberry.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7786994836&spider_token=6ccf"
@@ -30,7 +30,7 @@
         "id": 4,
         "nom": "Tn OG Black Black Reflective",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00€",
         "image": "imagesc/tn og black reflectife.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -39,7 +39,7 @@
         "id": 5,
         "nom": "Tn White",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.OO€",
         "image": "imagesc/tn white.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -48,7 +48,7 @@
         "id": 6,
         "nom": "Tn Wolf Grey",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00€",
         "image": "imagesc/tn wolf grey.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -57,7 +57,7 @@
         "id": 7,
         "nom": "Tn Aqua",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00€",
         "image": "imagesc/tn aqua.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -66,7 +66,7 @@
         "id": 8,
         "nom": "Tn Supreme White",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn supreme white.png",
         "lien BBD": "https://k.youshop10.com/-oC0bUk2"
@@ -75,7 +75,7 @@
         "id": 9,
         "nom": "Tn Black Silver White",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn black silver white.png",
         "lien BBD": "https://k.youshop10.com/-oC0bUk2"
@@ -84,7 +84,7 @@
         "id": 10,
         "nom": "Tn Black Dusty Cactus",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn noir dusty cactus.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -93,7 +93,7 @@
         "id": 11,
         "nom": "Tn Black Green Strike",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn black green strike.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -102,7 +102,7 @@
         "id": 12,
         "nom": "Tn Light Liquid Lime",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn light liquid lime.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -111,7 +111,7 @@
         "id": 13,
         "nom": "Tn Black Racer Blue",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn black racer blue.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -120,7 +120,7 @@
         "id": 14,
         "nom": "Tn Rainbow",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn rainbow.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -129,7 +129,7 @@
         "id": 15,
         "nom": "Tn Black Platinium Violet",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn black platinium violet.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -138,7 +138,7 @@
         "id": 16,
         "nom": "Tn Triple Swoosh",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn triple swoosh.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -147,7 +147,7 @@
         "id": 17,
         "nom": "Tn Premium White Vintage Green",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn premium white vintage green.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -156,7 +156,7 @@
         "id": 18,
         "nom": "Tn Swarovski",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn swarovski.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -165,7 +165,7 @@
         "id": 19,
         "nom": "Tn Sunset",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn sunset.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -174,7 +174,7 @@
         "id": 20,
         "nom": "Tn PSG",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn psg.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -183,7 +183,7 @@
         "id": 21,
         "nom": "Tn Black Linen Chalk",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn black linen chalk.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -192,7 +192,7 @@
         "id": 22,
         "nom": "Tn Blackened Blue",
         "categorie": "Chaussures",
-        "sousCategorie": "TN",
+        "Marques": "TN",
         "prix": "41.00  €",
         "image": "imagesc/tn-blackened-blue.png",
         "lienBBD": "https://k.youshop10.com/-oC0bUk2"
@@ -201,7 +201,7 @@
         "id": 23,
         "nom": "Dior B30 Kaki",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 kaki.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -210,7 +210,7 @@
         "id": 24,
         "nom": "Dior B30 Blue Grey Black",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 blue grey black.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -219,7 +219,7 @@
         "id": 25,
         "nom": "Dior B30 Green Black",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 green black.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -228,7 +228,7 @@
         "id": 26,
         "nom": "Dior B30 Reflective Grey Silver",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 reflective.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -237,7 +237,7 @@
         "id": 27,
         "nom": "Dior B30 Reflective Blue Grey",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 reflective blue grey.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -246,7 +246,7 @@
         "id": 28,
         "nom": "Dior B30 Reflective Grey Light Green",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 reflective grey light green.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -255,7 +255,7 @@
         "id": 29,
         "nom": "Dior B30 White Green Sole",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 white green sole.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -264,7 +264,7 @@
         "id": 30,
         "nom": "Dior B30 Blue Grey",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 blue grey.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -273,7 +273,7 @@
         "id": 31,
         "nom": "Dior B30 Light Blue Grey",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 light blue grey.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -282,7 +282,7 @@
         "id": 32,
         "nom": "Dior B30 Sand",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 sand.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -291,7 +291,7 @@
         "id": 33,
         "nom": "Dior B30 Cream Blue Grey",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 cream blue grey.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -300,7 +300,7 @@
         "id": 33,
         "nom": "Dior B30 Grey Anthracite",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 reflective grey anthracite.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -309,7 +309,7 @@
         "id": 34,
         "nom": "Dior B30 Black Blue",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 black blue.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -318,7 +318,7 @@
         "id": 35,
         "nom": "Dior B30 Blue Neon Yellow",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 blue neon yellow.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -327,7 +327,7 @@
         "id": 36,
         "nom": "Dior B30 White Blue Grey",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 white blue grey.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -336,7 +336,7 @@
         "id": 37,
         "nom": "Dior B30 Grey",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 grey.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -345,7 +345,7 @@
         "id": 38,
         "nom": "Dior B30 Light White",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 light white.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -354,7 +354,7 @@
         "id": 39,
         "nom": "Dior B30 Brown Orange",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 brown orange.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -363,7 +363,7 @@
         "id": 40,
         "nom": "Dior B30 White Black",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 white black.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -372,7 +372,7 @@
         "id": 41,
         "nom": "Dior B30 Blue Black Grey",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 blue black grey.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -381,7 +381,7 @@
         "id": 42,
         "nom": "Dior B30 White Silver",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 white silver.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -390,7 +390,7 @@
         "id": 43,
         "nom": "Dior B30 Deep Blue",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 deep blue.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -399,7 +399,7 @@
         "id": 44,
         "nom": "Dior B30 Light Green Purple",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 light green purple.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -408,7 +408,7 @@
         "id": 45,
         "nom": "Dior B30 Olive",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 olive.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -417,7 +417,7 @@
         "id": 46,
         "nom": "Dior B30 All White",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 all white.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -426,7 +426,7 @@
         "id": 47,
         "nom": "Dior B30 Yellow",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 yellow.png",
         "lienBBD": "https://k.youshop10.com/SCKr0ztF"
@@ -435,7 +435,7 @@
         "id": 48,
         "nom": "Dior B30 Black",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 black.png",
         "lienBBD": "https://k.youshop10.com/349r=hI9"
@@ -444,7 +444,7 @@
         "id": 49,
         "nom": "Dior B30 Black White",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 black white.png",
         "lienBBD": "https://k.youshop10.com/349r=hI9"
@@ -453,7 +453,7 @@
         "id": 50,
         "nom": "Dior B30 White Cream",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 white cream.png",
         "lienBBD": "https://k.youshop10.com/349r=hI9"
@@ -462,7 +462,7 @@
         "id": 51,
         "nom": "Dior B30 Grey Anthracite",
         "categorie": "Chaussures",
-        "sousCategorie": "DIOR",
+        "Marques": "DIOR",
         "prix": "58.62  €",
         "image": "imagesc/dior B30 grey anthracite.png",
         "lienBBD": "https://k.youshop10.com/349r=hI9"

@@ -3,7 +3,7 @@
         "id": 1,
         "nom": "Phenom Elite Noir",
         "categorie": "Bas",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "20.02€",
         "image": "imagesb/phenom elite noir.png",
         "lienBBD": "https://k.youshop10.com/TZNeMTTS"
@@ -12,7 +12,7 @@
         "id": 2,
         "nom": "Phenom Elite gris",
         "categorie": "Bas",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "20.02€",
         "image": "imagesb/phenom elite gris.png",
         "lienBBD": "https://k.youshop10.com/TZNeMTTS"
@@ -21,7 +21,7 @@
         "id": 3,
         "nom": "Phenom Elite Bouclier",
         "categorie": "Bas",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "20.02€",
         "image": "imagesb/phenom elite bouclier.png",
         "lienBBD": "https://k.youshop10.com/Ms9KfqA5"
@@ -30,7 +30,7 @@
         "id": 4,
         "nom": "Nike Trail",
         "categorie": "Bas",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "16.87€",
         "image": "imagesb/Nike Trail.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -39,7 +39,7 @@
         "id": 5,
         "nom": "Nike Aeroswift Noir",
         "categorie": "Bas",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "15.59€",
         "image": "imagesb/nike aeroswift noir.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -48,7 +48,7 @@
         "id": 6,
         "nom": "Nike Aeroswift Bleu",
         "categorie": "Bas",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "15.59€",
         "image": "imagesb/nike aeroswift bleu.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -57,7 +57,7 @@
         "id": 7,
         "nom": "Nike Aeroswift Blanc",
         "categorie": "Bas",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "15.59€",
         "image": "imagesb/nike aeroswift blanc.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -66,7 +66,7 @@
         "id": 8,
         "nom": "Nike Phenom Elite Tokyo",
         "categorie": "Bas",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "19.73€",
         "image": "imagesb/phenom elite tokyo.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -75,7 +75,7 @@
         "id": 9,
         "nom": "Nike Phenom Tokyo",
         "categorie": "Bas",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "19.73€",
         "image": "imagesb/phenom tokyo.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -84,7 +84,7 @@
         "id": 10,
         "nom": "Nike Berlin",
         "categorie": "Bas",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "19.73€",
         "image": "imagesb/bas berlin.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -93,7 +93,7 @@
         "id": 11,
         "nom": "Nike Division Spyder Bleu",
         "categorie": "Bas",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "26.88€",
         "image": "imagesb/nike div bleu.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"

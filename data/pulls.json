@@ -3,7 +3,7 @@
         "id": 1,
         "nom": "Nike Half-Zip Tempo machine",
         "categorie": "Pull",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "18.59  €",
         "image": "imagesp/demi zip tempo.png",
         "lienBBD": "https://k.youshop10.com/TZNeMTTS"
@@ -12,7 +12,7 @@
         "id": 2,
         "nom": "Half-Zip Under Armour",
         "categorie": "Pull",
-        "sousCategorie": "UA",
+        "Marques": "UA",
         "prix": "17.16  €",
         "image": "imagesp/half zip under.png",
         "lienBBD": "https://k.youshop10.com/TZNeMTTS"
@@ -21,7 +21,7 @@
         "id": 3,
         "nom": "Half-Zip Energy noir",
         "categorie": "Pull",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "14.30  €",
         "image": "imagesp/half zip energy noir.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747804489"
@@ -30,7 +30,7 @@
         "id": 4,
         "nom": "Half-Zip Energy Bleu",
         "categorie": "Pull",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "14.30  €",
         "image": "imagesp/half zip energy bleu.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747804489"
@@ -39,7 +39,7 @@
         "id": 5,
         "nom": "Pull Nike Trail",
         "categorie": "Pull",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "18.59  €",
         "image": "imagesp/pull nike trail.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -48,7 +48,7 @@
         "id": 6,
         "nom": "Half-Zip Division Vert",
         "categorie": "Pull",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "18.30  €",
         "image": "imagesp/half zip division vert.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -57,7 +57,7 @@
         "id": 7,
         "nom": "Half-Zip Division Noir",
         "categorie": "Pull",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "18.30  €",
         "image": "imagesp/half zip division noir.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -66,7 +66,7 @@
         "id": 8,
         "nom": "Pull Nike Trail Mont Blanc",
         "categorie": "Pull",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "18.59  €",
         "image": "imagesp/pull nike trail mont blanc.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -75,7 +75,7 @@
         "id": 9,
         "nom": "Nike Longsleeve Tokyo",
         "categorie": "Pull",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "18.30  €",
         "image": "imagesp/tokyo.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"

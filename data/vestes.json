@@ -3,7 +3,7 @@
         "id": 1,
         "nom": "Veste Nike DYE Grise",
         "categorie": "Vestes",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "31.46  €",
         "image": "imagesv/nike veste DYE grise.png",
         "lienBBD": "https://k.youshop10.com/89HmvtqR"
@@ -12,7 +12,7 @@
         "id": 2,
         "nom": "Veste Nike Aeroswift",
         "categorie": "Vestes",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "30.03  €",
         "image": "imagesv/veste aeroswift.png",
         "lienBBD": "https://k.youshop10.com/TZNeMTTS"
@@ -21,7 +21,7 @@
         "id": 3,
         "nom": "Veste Under Hybrid",
         "categorie": "Vestes",
-        "sousCategorie": "UA",
+        "Marques": "UA",
         "prix": "26.45  €",
         "image": "imagesv/under hybrid.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747804489"
@@ -30,7 +30,7 @@
         "id": 4,
         "nom": "Veste Nike AllWays",
         "categorie": "Vestes",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "26.88  €",
         "image": "imagesv/allways.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -39,7 +39,7 @@
         "id": 5,
         "nom": "Veste Nike Nathan Bell",
         "categorie": "Vestes",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "26.88  €",
         "image": "imagesv/nathan bell.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
@@ -48,7 +48,7 @@
         "id": 6,
         "nom": "Veste Nike Panda",
         "categorie": "Vestes",
-        "sousCategorie": "NIKE",
+        "Marques": "NIKE",
         "prix": "26.88  €",
         "image": "imagesv/veste panda.png",
         "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"

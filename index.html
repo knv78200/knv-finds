@@ -3,29 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KNVCORP.FINDS</title>
+    <meta name="description" content="Catalogue de produits KNV FINDS - Découvrez nos meilleures sélections.">
+    <title>KNV FINDS | Catalogue</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
+    <div class="top-bar">
+        <a href="https://www.bbdbuyeu.com/register?inviteCode=qKlpbc" target="_blank">BBDBUY</a>
+        <a href="https://discord.gg/bX42VeRWx7" target="_blank">DISCORD</a>
+        <a href="mailto:ton.email@gmail.com">COLLAB</a>
+    </div>
+
     <header>
         <h1>KNV FINDS</h1>
         <div class="controls">
             <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+            
             <select id="filtreCategorie">
                 <option value="all">Tous les produits</option>
                 <option value="Chaussures">Chaussures</option>
                 <option value="Pull">Pull</option>
                 <option value="Bas">Bas</option>
-                <option value ="Vestes">Vestes</option>
-                <option value ="T-Shirts">T-Shirts</option>
+                <option value="Vestes">Vestes</option>
+                <option value="T-Shirts">T-Shirts</option>
             </select>
-            <select id="filtreSousCategorie">
-    <option value="all">Toutes les sous-catégories</option>
-    </select>
+
+            <select id="filtreMarques">
+                <option value="all">Toutes les marques</option>
+            </select>
         </div>
     </header>
 
+    <div class="info-banner">
+        <p>Voici un tuto pour commander : 
+            <a href="https://www.tiktok.com/@knv.mrktng/photo/7637239598082559254?is_from_webapp=1&sender_device=pc&web_id=7633818797539329558" class="highlight-link">TUTO</a>
+        </p>
+    </div>
+
+    <div class="info-banner">
+        <p>Pour commander, inscris-toi ici : 
+            <a href="https://www.bbdbuyeu.com/register?inviteCode=qKlpbc" target="_blank" class="highlight-link">Lien BBDBUY</a>
+        </p>
+    </div>
+
     <main id="liste-produits"></main>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="https://www.tiktok.com/@knv.mrktng/photo/7637239598082559254?is_from_webapp=1&sender_device=pc&web_id=7633818797539329558" allowfullscreen></iframe>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

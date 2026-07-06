@@ -7,7 +7,7 @@ let produits = [];
 async function chargerDonnees() {
     for (const fichier of fichiersData) {
         try {
-            console.log(`Chargement de : ${fichier}`); // Vous verrez ça dans la console F12
+            console.log(`Chargement de : ${fichier}`);
             const reponse = await fetch(`data/${fichier}`);
             if (!reponse.ok) throw new Error(`Erreur HTTP : ${reponse.status}`);
             const data = await reponse.json();
@@ -17,72 +17,146 @@ async function chargerDonnees() {
         }
     }
     console.log("Total produits chargés :", produits.length);
+    
+    // Initialisation : Remplir les marques et afficher tout
+    mettreAJourMenuMarques();
     afficherProduits();
-    mettreAJourMenuSousCategories(); // <--- AJOUTEZ CETTE LIGNE
 }
 
-
-function mettreAJourMenuSousCategories() {
-    const select = document.getElementById("filtreSousCategorie");
+// Fonction pour remplir dynamiquement le menu déroulant "Marques"
+function mettreAJourMenuMarques() {
+    const select = document.getElementById("filtreMarques");
     const categorieActive = document.getElementById("filtreCategorie").value;
     
-    // On filtre les produits par catégorie avant de lister les sous-catégories
+    // On filtre les produits par catégorie pour n'afficher que les marques pertinentes
     const produitsFiltres = categorieActive === "all" 
         ? produits 
         : produits.filter(p => p.categorie === categorieActive);
 
-    const sousCats = [...new Set(produitsFiltres.map(p => p.sousCategorie).filter(sc => sc))];
+    // Récupérer les marques uniques (propriété 'Marques' de votre JSON)
+    // On utilise le ?. (Optional Chaining) pour éviter de planter si la propriété manque sur un produit
+    const marquesUniques = [...new Set(produitsFiltres.map(p => p.Marques).filter(Boolean))];
     
-    select.innerHTML = '<option value="all">Toutes les sous-catégories</option>';
-    sousCats.forEach(sc => {
-        select.innerHTML += `<option value="${sc}">${sc}</option>`;
+    // Trier les marques par ordre alphabétique
+    marquesUniques.sort((a, b) => a.localeCompare(b));
+
+    // Vider et reconstruire le menu déroulant
+    select.innerHTML = '<option value="all">Toutes les marques</option>';
+    marquesUniques.forEach(marque => {
+        select.innerHTML += `<option value="${marque}">${marque}</option>`;
     });
 }
 
-// Ajoutez aussi cet écouteur pour rafraîchir les sous-catégories quand on change de catégorie principale
-document.getElementById("filtreCategorie").addEventListener("change", mettreAJourMenuSousCategories);
-
+// Fonction principale d'affichage avec regroupement par catégorie
 function afficherProduits() {
     const conteneur = document.getElementById("liste-produits");
+    // Valeurs des filtres
     const recherche = document.getElementById("searchInput").value.toLowerCase();
-    const categorie = document.getElementById("filtreCategorie").value;
-    
-    // Récupération sécurisée du filtre de sous-catégorie
-    const sousCatElement = document.getElementById("filtreSousCategorie");
-    const sousCat = sousCatElement ? sousCatElement.value : "all";
+    const categorieSelectionnee = document.getElementById("filtreCategorie").value;
+    const marqueSelectionnee = document.getElementById("filtreMarques").value;
     
     conteneur.innerHTML = ""; 
 
-    produits.filter(p => {
-        const matchCategorie = (categorie === "all" || p.categorie === categorie);
-        const matchSousCat = (sousCat === "all" || !p.sousCategorie || p.sousCategorie === sousCat);
-        const matchRecherche = (p.nom && p.nom.toLowerCase().includes(recherche));
+    // 1. Filtrer les produits selon les critères
+    const produitsFiltres = produits.filter(p => {
+        // Vérification de sécurité minimale
+        if (!p.nom || !p.image || !p.prix) return false;
 
-        return matchCategorie && matchSousCat && matchRecherche;
-    }).forEach(p => {
-        if (!p.nom || !p.image || !p.prix) return; 
+        const matchCategorie = (categorieSelectionnee === "all" || p.categorie === categorieSelectionnee);
+        // On autorise p.Marques à être vide (undefined/null) pour ne pas cacher le produit
+        const matchMarque = (marqueSelectionnee === "all" || p.Marques === marqueSelectionnee);
+        const matchRecherche = p.nom.toLowerCase().includes(recherche);
 
-        conteneur.innerHTML += `
+        return matchCategorie && matchMarque && matchRecherche;
+    });
+
+    // 2. Extraire les catégories uniques présentes dans les résultats filtrés
+    const categoriesPresentes = [...new Set(produitsFiltres.map(p => p.categorie))];
+    categoriesPresentes.sort();
+
+    // 3. Afficher les produits section par section
+    categoriesPresentes.forEach(cat => {
+        // Ajouter le titre de la section
+        conteneur.innerHTML += `<div class="category-section" style="grid-column: 1 / -1;"><h2 class="category-title">${cat}</h2></div>`;
+        
+        // Ajouter uniquement les produits de cette catégorie
+        produitsFiltres.filter(p => p.categorie === cat).forEach(p => {
+            // Affichage conditionnel de la marque si elle existe
+            const marqueDisplay = p.Marques ? `<span class="brand-badge">${p.Marques}</span>` : "";
+
+            // ... dans ton forEach(p => {
+// Remplace la partie création HTML par ceci :
+conteneur.innerHTML += `
     <div class="card">
         <span class="price">${p.prix}</span>
         <img src="${p.image}" alt="${p.nom}" onerror="this.style.display='none'">
-        <h3>${p.nom}</h3>
-        <span class="category-badge">${p.categorie}</span> <a href="${p.lienBBD}" target="_blank" class="btn">Voir le lien</a>
+        
+        <div class="card-content">
+            <h3>${p.nom}</h3>
+            <div class="card-infos">
+                <span class="category-badge">${p.categorie}</span>
+                ${p.Marques ? `<span class="brand-badge">${p.Marques}</span>` : ""}
+            </div>
+        </div>
+        
+        <a href="${p.lienBBD}" target="_blank" class="btn">Voir le lien</a>
     </div>`;
+        });
     });
 }
+
+const modal = document.getElementById("videoModal");
+const btnTuto = document.querySelector(".highlight-link");
+const spanClose = document.querySelector(".close");
+const iframe = modal ? modal.querySelector("iframe") : null;
+
+// Vérification que les éléments existent pour éviter les erreurs
+if (btnTuto && modal) {
+    btnTuto.onclick = (e) => { 
+        e.preventDefault(); 
+        modal.style.display = "block"; 
+    };
+}
+
+if (spanClose && modal) {
+    spanClose.onclick = () => { 
+        modal.style.display = "none"; 
+        
+        // Coupe le son en réinitialisant la source de l'iframe
+        if (iframe) {
+            const src = iframe.src;
+            iframe.src = "";
+            iframe.src = src;
+        }
+    };
+}
+
+// Fermer la vidéo si on clique sur le fond noir
+window.onclick = (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+        if (iframe) {
+            const src = iframe.src;
+            iframe.src = "";
+            iframe.src = src;
+        }
+    }
+};
+
+// --- Écouteurs d'événements ---
+
 // Lancer le chargement au démarrage
 chargerDonnees();
 
-// Écouteurs d'événements
-// Rafraîchir quand on tape dans la recherche
+// 1. Quand on tape dans la recherche
 document.getElementById("searchInput").addEventListener("input", afficherProduits);
 
-// Rafraîchir les produits et le menu quand on change de catégorie
+// 2. Quand on change de catégorie principale
 document.getElementById("filtreCategorie").addEventListener("change", () => {
-    mettreAJourMenuSousCategories();
+    // Il faut mettre à jour le menu des marques ET réafficher les produits
+    mettreAJourMenuMarques();
     afficherProduits();
 });
 
-// Rafraîchir les produits quand on change de sous-catégorie
-document.getElementById("filtreSousCategorie").addEventListener("change", afficherProduits);
+// 3. Quand on change le filtre de marque
+document.getElementById("filtreMarques").addEventListener("change", afficherProduits);
