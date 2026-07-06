@@ -1,5 +1,5 @@
 // Liste des fichiers à charger automatiquement depuis le dossier /data/
-const fichiersData = ['chaussures.json', 'bas.json', 'pulls.json', 'vestes.json', 'tshirts.json']; 
+const fichiersData = ['chaussures.json', 'bas.json', 'pulls.json', 'tshirts.json', 'vestes.json']; 
 
 let produits = [];
 
