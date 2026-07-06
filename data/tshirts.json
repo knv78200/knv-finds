@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "nom": "Nike OS Blanc",
+        "categorie": "T-Shirts",
+        "sousCategorie": "NIKE",
+        "prix": "12.58  €",
+        "image": "imagest/os blanc.png",
+        "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
+    },
+    {
+        "id": 2,
+        "nom": "Nike OS Noir",
+        "categorie": "T-Shirts",
+        "sousCategorie": "NIKE",
+        "prix": "12.58  €",
+        "image": "imagest/os noir.png",
+        "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
+    },
+    {
+        "id": 3,
+        "nom": "Nike OS Cyan",
+        "categorie": "T-Shirts",
+        "sousCategorie": "NIKE",
+        "prix": "12.58  €",
+        "image": "imagest/os cyan.png",
+        "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
+    },
+    {
+        "id": 4,
+        "nom": "Nike Division Bleu",
+        "categorie": "T-Shirts",
+        "sousCategorie": "NIKE",
+        "prix": "12.58  €",
+        "image": "imagest/tshirt div bleu.png",
+        "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
+    },
+    {
+        "id": 5,
+        "nom": "Nike Berlin Rise",
+        "categorie": "T-Shirts",
+        "sousCategorie": "NIKE",
+        "prix": "12.58  €",
+        "image": "imagest/berlin rise.png",
+        "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
+    },
+    {
+        "id": 6,
+        "nom": "Nike Berlin Fast Capsule",
+        "categorie": "T-Shirts",
+        "sousCategorie": "NIKE",
+        "prix": "12.58  €",
+        "image": "imagest/berlin fast capsule.png",
+        "lienBBD": "https://weidian.com/item.html?itemID=7747097225&spider_token=cf1f"
+    }
+]

@@ -1,5 +1,5 @@
 // Liste des fichiers à charger automatiquement depuis le dossier /data/
-const fichiersData = ['chaussures.json', 'bas.json', 'pulls.json', 'vestes.json']; 
+const fichiersData = ['chaussures.json', 'bas.json', 'pulls.json', 'vestes.json', 'tshirts.json']; 
 
 let produits = [];
 
@@ -63,12 +63,12 @@ function afficherProduits() {
         if (!p.nom || !p.image || !p.prix) return; 
 
         conteneur.innerHTML += `
-            <div class="card">
-                <img src="${p.image}" alt="${p.nom}" onerror="this.style.display='none'">
-                <h3>${p.nom}</h3>
-                <p class="price">${p.prix}</p>
-                <a href="${p.lienBBD}" target="_blank" class="btn">Voir le lien</a>
-            </div>`;
+    <div class="card">
+        <span class="price">${p.prix}</span>
+        <img src="${p.image}" alt="${p.nom}" onerror="this.style.display='none'">
+        <h3>${p.nom}</h3>
+        <span class="category-badge">${p.categorie}</span> <a href="${p.lienBBD}" target="_blank" class="btn">Voir le lien</a>
+    </div>`;
     });
 }
 // Lancer le chargement au démarrage
