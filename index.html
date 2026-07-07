@@ -51,11 +51,15 @@
     <main id="liste-produits"></main>
 
     <div id="videoModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <iframe src="https://youtube.com/shorts/epkUGK9wnwM?is=gsw5_5rTlo2Ss58V" allowfullscreen></iframe>
-        </div>
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- Utilise le format /embed/ suivi uniquement de l'ID, sans le ?si=... -->
+        <iframe src="https://www.youtube.com/embed/epkUGK9wnwM" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
     </div>
+</div>
 
     <script src="script.js"></script>
 </body>
