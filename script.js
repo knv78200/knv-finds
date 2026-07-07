@@ -84,23 +84,27 @@ function afficherProduits() {
             // Affichage conditionnel de la marque si elle existe
             const marqueDisplay = p.Marques ? `<span class="brand-badge">${p.Marques}</span>` : "";
 
-            // ... dans ton forEach(p => {
-// Remplace la partie création HTML par ceci :
-conteneur.innerHTML += `
-    <div class="card">
-        <span class="price">${p.prix}</span>
-        <img src="${p.image}" alt="${p.nom}" onerror="this.style.display='none'">
-        
-        <div class="card-content">
-            <h3>${p.nom}</h3>
-            <div class="card-infos">
-                <span class="category-badge">${p.categorie}</span>
-                ${p.Marques ? `<span class="brand-badge">${p.Marques}</span>` : ""}
-            </div>
-        </div>
-        
-        <a href="${p.lienBBD}" target="_blank" class="btn">Voir le lien</a>
-    </div>`;
+            // Ajout du produit avec le tracking GA4
+            conteneur.innerHTML += `
+            <div class="card">
+                <span class="price">${p.prix}</span>
+                <img src="${p.image}" alt="${p.nom}" onerror="this.style.display='none'">
+                
+                <div class="card-content">
+                    <h3>${p.nom}</h3>
+                    <div class="card-infos">
+                        <span class="category-badge">${p.categorie}</span>
+                        ${marqueDisplay}
+                    </div>
+                </div>
+                
+                <a href="${p.lienBBD}" 
+                   target="_blank" 
+                   class="btn" 
+                   onclick="gtag('event', 'clic_produit', {'nom_produit': '${p.nom.replace(/'/g, "\\'")}', 'categorie': '${p.categorie}'});">
+                   Voir le lien
+                </a>
+            </div>`;
         });
     });
 }
