@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BZ2T6PTH1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8BZ2T6PTH1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Catalogue de produits KNV FINDS - Découvrez nos meilleures sélections.">
@@ -51,15 +60,14 @@
     <main id="liste-produits"></main>
 
     <div id="videoModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <!-- Utilise le format /embed/ suivi uniquement de l'ID, sans le ?si=... -->
-        <iframe src="https://www.youtube.com/embed/epkUGK9wnwM" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="https://www.youtube.com/embed/epkUGK9wnwM" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
     </div>
-</div>
 
     <script src="script.js"></script>
 </body>
