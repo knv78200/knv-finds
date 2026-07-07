@@ -79,5 +79,14 @@
         "prix": "18.30  €",
         "image": "imagesp/tokyo.png",
         "lienBBD": "https://www.bbdbuyeu.com/goods/WEIDIAN/7747097225?from=search&inviteCode=qKlpbc"
+    },
+    {
+        "id": 10,
+        "nom": "Nike DRI-FIT Tokyo",
+        "categorie": "Pull",
+        "Marques": "NIKE",
+        "prix": "19.72 €",
+        "image": "imagesp/dri fit tokyo.png",
+        "lienBBD": "https://www.bbdbuyeu.com/goods/WEIDIAN/7747097225?from=search&inviteCode=qKlpbc"
     }
 ]
