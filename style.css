@@ -179,41 +179,66 @@ header { padding: 30px 10%; }
 /* ==========================================
    OPTIMISATION MOBILE (Écrans < 600px)
    ========================================== */
+/* ==========================================
+   OPTIMISATION MOBILE (Écrans < 600px)
+   ========================================== */
 @media (max-width: 600px) { 
     header { padding: 15px 5%; }
     h1 { font-size: 1.4rem; letter-spacing: 1px; margin-bottom: 10px; }
     
-    /* Rapproche et ajuste les menus de recherche/sélection */
-    .controls { gap: 8px; margin: 10px; }
-    input, select { padding: 8px 12px; font-size: 0.8rem; width: 100%; max-width: 100%; }
+    .controls { gap: 8px; margin: 10px 5px; }
+    input, select { padding: 8px; font-size: 0.8rem; width: 100%; }
     
-    /* Grille en 2 colonnes bien aérée sans gaspiller d'espace */
+    /* Grille en 2 colonnes avec des espaces très réduits */
     #liste-produits { 
         grid-template-columns: repeat(2, 1fr); 
-        gap: 12px; 
-        padding: 10px; 
+        gap: 8px; /* Espace réduit entre les 2 cartes */
+        padding: 8px; /* Espace réduit sur les bords de l'écran */
     } 
     
-    /* Optimisation de la carte sur mobile pour éviter le vide */
+    /* Cartes ultra-compactes */
     .card { 
-        padding: 10px; 
+        padding: 8px; /* Moins de vide à l'intérieur de la carte */
         border-radius: 12px;
     }
     
-    /* Réduction cruciale de la hauteur d'image pour compacter la carte */
+    /* Image rétrécie pour un format plus carré et compact */
     .card img { 
-        height: 125px; 
-        margin-bottom: 8px; 
+        height: 120px; 
+        margin-bottom: 6px; 
         border-radius: 8px;
     }
     
-    /* Textes et prix légèrement plus compacts pour mobile */
-    .price { top: 12px; left: 12px; padding: 2px 6px; font-size: 0.65rem; }
-    .card h3 { font-size: 0.75rem; margin: 4px 0; }
+    /* Étiquette de prix redimensionnée et replacée */
+    .price { 
+        top: 8px; 
+        left: 8px; 
+        padding: 2px 6px; 
+        font-size: 0.65rem; 
+        border-radius: 4px;
+    }
     
-    /* Ajustement des badges pour qu'ils restent fluides sur petit écran */
-    .card-infos { gap: 4px; margin-top: 6px; flex-wrap: wrap; }
-    .category-badge, .brand-badge { font-size: 0.55rem; padding: 3px 6px; border-radius: 4px; }
+    /* Texte principal ajusté */
+    .card h3 { 
+        font-size: 0.75rem; 
+        margin: 4px 0; 
+    }
     
-    .top-bar { gap: 15px; padding: 10px; font-size: 0.65rem; }
+    /* Badges rétrécis pour tenir parfaitement sur la largeur */
+    .card-infos { 
+        gap: 4px; 
+        margin-top: 6px; 
+        flex-wrap: wrap; /* Passe à la ligne si vraiment nécessaire */
+    }
+    .category-badge, .brand-badge { 
+        font-size: 0.55rem; 
+        padding: 2px 6px; 
+        border-radius: 4px; 
+    }
+    
+    .top-bar { 
+        gap: 10px; 
+        padding: 10px; 
+        font-size: 0.6rem; 
+    }
 }
