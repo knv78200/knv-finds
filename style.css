@@ -191,55 +191,67 @@ header { padding: 30px 10%; }
 /* ==========================================
    OPTIMISATION MOBILE (Écrans < 600px)
    ========================================== */
+/* ==========================================
+   OPTIMISATION MOBILE (Écrans < 600px)
+   ========================================== */
 @media (max-width: 600px) { 
-    /* Empêche le défilement horizontal sur tout le site mobile */
     body {
         overflow-x: hidden;
     }
 
-    header { padding: 15px 5%; }
-    h1 { font-size: 1.4rem; letter-spacing: 1px; margin-bottom: 10px; }
+    header { padding: 10px 5%; }
+    h1 { font-size: 1.3rem; letter-spacing: 1px; margin-bottom: 5px; }
     
-    /* Menus de contrôles empilés proprement */
     .controls { 
         display: flex;
-        flex-direction: column; /* Empile la recherche et le filtre de haut en bas */
-        gap: 10px; 
-        margin: 10px 5%; /* Marge sur les côtés pour aérer */
+        flex-direction: column; 
+        gap: 8px; 
+        margin: 5px 5%; 
         width: 90%;
     }
     input, select { 
-        padding: 10px; 
-        font-size: 0.85rem; 
-        width: 100%; /* Prend toute la largeur sans déborder grâce au box-sizing */
+        padding: 8px; 
+        font-size: 0.8rem; 
+        width: 100%; 
+        box-sizing: border-box;
     }
     
-    /* Grille bloquée à 2 colonnes strictes */
+    /* Grille ultra-compactée */
     #liste-produits { 
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        gap: 10px; 
-        padding: 10px; 
+        gap: 8px; /* Espacement minimal entre les cartes */
+        padding: 5px 10px; /* Moins de marge sur les bords de l'écran */
         width: 100%;
+        box-sizing: border-box; /* Empêche le débordement */
     } 
     
-    /* Cartes encadrées pour ne pas déborder */
+    /* Cartes réduites au max */
     .card { 
-        padding: 8px; 
-        border-radius: 12px;
+        padding: 6px; /* Quasiment collé aux bords de la carte */
+        border-radius: 10px;
         width: 100%;
+        box-sizing: border-box; 
     }
     
+    /* IMAGE COUPÉE : C'est ce qui prend le plus de place */
     .card img { 
-        height: 120px; 
-        margin-bottom: 6px; 
-        border-radius: 8px;
+        height: 95px; /* Énorme réduction de la taille */
+        margin-bottom: 4px; 
+        border-radius: 6px;
     }
     
-    .price { top: 8px; left: 8px; padding: 2px 6px; font-size: 0.65rem; }
-    .card h3 { font-size: 0.75rem; margin: 4px 0; }
-    .card-infos { gap: 4px; margin-top: 6px; flex-wrap: wrap; }
-    .category-badge, .brand-badge { font-size: 0.55rem; padding: 2px 6px; border-radius: 4px; }
+    /* Textes et prix miniatures */
+    .price { top: 4px; left: 4px; padding: 2px 5px; font-size: 0.6rem; border-radius: 4px; }
+    .card h3 { font-size: 0.7rem; margin: 2px 0; }
+    
+    /* Badges miniaturisés */
+    .card-infos { gap: 3px; margin-top: 4px; flex-wrap: wrap; }
+    .category-badge, .brand-badge { 
+        font-size: 0.5rem; 
+        padding: 2px 4px; 
+        border-radius: 4px; 
+    }
     
     .top-bar { gap: 10px; padding: 10px; font-size: 0.6rem; }
 }
