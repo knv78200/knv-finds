@@ -250,9 +250,9 @@ header { padding: 30px 10%; }
         overflow: hidden; /* Coupe ce qui dépasse des coins arrondis */
     }
     
-    /* L'image prend un aspect plus carré et imposant */
+    /* L'image prend un aspect plus vertical et imposant */
     .card img { 
-        height: 150px; 
+        height: 190px; 
         width: 100%;
         border-radius: 12px 12px 0 0; /* Arrondi seulement en haut */
         margin-bottom: 0; 
