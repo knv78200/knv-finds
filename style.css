@@ -194,62 +194,87 @@ header { padding: 30px 10%; }
 /* ==========================================
    OPTIMISATION MOBILE (Écrans < 600px)
    ========================================== */
+/* ==========================================
+   OPTIMISATION MOBILE (Écrans < 600px)
+   ========================================== */
 @media (max-width: 600px) { 
     body {
         overflow-x: hidden;
     }
 
-    header { padding: 10px 5%; }
-    h1 { font-size: 1.3rem; letter-spacing: 1px; margin-bottom: 5px; }
+    header { padding: 15px 5% 5px; }
+    h1 { font-size: 1.4rem; letter-spacing: 1px; margin-bottom: 5px; }
     
+    /* 1. DISPOSITION DES FILTRES COMME SUR LA PHOTO */
     .controls { 
-        display: flex;
-        flex-direction: column; 
-        gap: 8px; 
-        margin: 5px 5%; 
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 colonnes égales */
+        gap: 10px; 
+        margin: 10px 5%; 
         width: 90%;
     }
-    input, select { 
-        padding: 8px; 
-        font-size: 0.8rem; 
-        width: 100%; 
+    
+    /* La barre de recherche prend toute la largeur (2 colonnes) */
+    .controls input {
+        grid-column: span 2;
+        width: 100%;
         box-sizing: border-box;
     }
     
-    /* Grille ultra-compactée */
+    /* Les listes déroulantes prennent 1 colonne chacune */
+    .controls select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+        font-size: 0.75rem;
+    }
+    
+    /* 2. GRILLE DES PRODUITS */
     #liste-produits { 
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        gap: 8px; /* Espacement minimal entre les cartes */
-        padding: 5px 10px; /* Moins de marge sur les bords de l'écran */
+        gap: 12px; 
+        padding: 10px 15px; 
         width: 100%;
-        box-sizing: border-box; /* Empêche le débordement */
+        box-sizing: border-box;
     } 
     
-    /* Cartes réduites au max */
+    /* 3. CARTES COMME SUR LA PHOTO (Images collées aux bords) */
     .card { 
-        padding: 6px; /* Quasiment collé aux bords de la carte */
-        border-radius: 10px;
+        padding: 0; /* SUPPRESSION DU PADDING : l'image touche les bords */
+        border-radius: 12px;
         width: 100%;
         box-sizing: border-box; 
+        overflow: hidden; /* Coupe ce qui dépasse des coins arrondis */
     }
     
-    /* IMAGE COUPÉE : C'est ce qui prend le plus de place */
+    /* L'image prend un aspect plus carré et imposant */
     .card img { 
-        height: 95px; /* Énorme réduction de la taille */
-        margin-bottom: 4px; 
-        border-radius: 6px;
+        height: 150px; 
+        width: 100%;
+        border-radius: 12px 12px 0 0; /* Arrondi seulement en haut */
+        margin-bottom: 0; 
     }
     
-    /* Textes et prix miniatures */
-    .price { top: 4px; left: 4px; padding: 2px 5px; font-size: 0.6rem; border-radius: 4px; }
-    .card h3 { font-size: 0.7rem; margin: 2px 0; }
+    /* On remet un peu d'espace autour du texte en bas de l'image */
+    .card-content {
+        padding: 8px;
+    }
     
-    /* Badges miniaturisés */
-    .card-infos { gap: 3px; margin-top: 4px; flex-wrap: wrap; }
+    .price { 
+        top: 8px; 
+        left: 8px; 
+        padding: 3px 8px; 
+        font-size: 0.7rem; 
+        border-radius: 6px; 
+    }
+    
+    .card h3 { font-size: 0.8rem; margin: 4px 0; }
+    
+    .card-infos { gap: 4px; margin-top: 6px; flex-wrap: wrap; }
     .category-badge, .brand-badge { 
-        font-size: 0.5rem; 
-        padding: 2px 4px; 
+        font-size: 0.55rem; 
+        padding: 3px 6px; 
         border-radius: 4px; 
     }
     
