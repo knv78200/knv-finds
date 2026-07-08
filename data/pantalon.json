@@ -2,7 +2,7 @@
     {
         "id": 1,
         "nom": "Phenom Elite Noir",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "20.02€",
         "image": "imagesb/phenom elite noir.png",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "nom": "Phenom Elite gris",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "20.02€",
         "image": "imagesb/phenom elite gris.png",
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "nom": "Phenom Elite Bouclier",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "20.02€",
         "image": "imagesb/phenom elite bouclier.png",
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "nom": "Nike Trail",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "16.87€",
         "image": "imagesb/Nike Trail.png",
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "nom": "Nike Aeroswift Noir",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "15.59€",
         "image": "imagesb/nike aeroswift noir.png",
@@ -47,7 +47,7 @@
     {
         "id": 6,
         "nom": "Nike Aeroswift Bleu",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "15.59€",
         "image": "imagesb/nike aeroswift bleu.png",
@@ -56,7 +56,7 @@
     {
         "id": 7,
         "nom": "Nike Aeroswift Blanc",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "15.59€",
         "image": "imagesb/nike aeroswift blanc.png",
@@ -65,7 +65,7 @@
     {
         "id": 8,
         "nom": "Nike Phenom Elite Tokyo",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "19.73€",
         "image": "imagesb/phenom elite tokyo.png",
@@ -74,7 +74,7 @@
     {
         "id": 9,
         "nom": "Nike Phenom Tokyo",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "19.73€",
         "image": "imagesb/phenom tokyo.png",
@@ -83,7 +83,7 @@
     {
         "id": 10,
         "nom": "Nike Berlin",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "19.73€",
         "image": "imagesb/bas berlin.png",
@@ -92,7 +92,7 @@
     {
         "id": 11,
         "nom": "Nike Division Spyder Bleu",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "26.88€",
         "image": "imagesb/nike div bleu.png",
@@ -101,7 +101,7 @@
     {
         "id": 12,
         "nom": "Nike Phenom Elite Rouge",
-        "categorie": "Bas",
+        "categorie": "Pantalons",
         "Marques": "NIKE",
         "prix": "20.73€",
         "image": "imagesb/phenom rouge.png",

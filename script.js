@@ -1,5 +1,5 @@
 // Liste des fichiers à charger automatiquement depuis le dossier /data/
-const fichiersData = ['chaussures.json', 'bas.json', 'pulls.json', 'tshirts.json', 'vestes.json']; 
+const fichiersData = ['chaussures.json', 'pantalon.json', 'pulls.json', 'tshirts.json', 'vestes.json']; 
 
 let produits = [];
 
@@ -81,31 +81,30 @@ function afficherProduits() {
         
         // Ajouter uniquement les produits de cette catégorie
         produitsFiltres.filter(p => p.categorie === cat).forEach(p => {
-            // Affichage conditionnel de la marque si elle existe
-            const marqueDisplay = p.Marques ? `<span class="brand-badge">${p.Marques}</span>` : "";
+    // Affichage conditionnel de la marque si elle existe
+    const marqueDisplay = p.Marques ? `<span class="brand-badge">${p.Marques}</span>` : "";
 
-            // Ajout du produit avec le tracking GA4
-            conteneur.innerHTML += `
-            <div class="card">
-                <span class="price">${p.prix}</span>
-                <img src="${p.image}" alt="${p.nom}" onerror="this.style.display='none'">
-                
-                <div class="card-content">
-                    <h3>${p.nom}</h3>
-                    <div class="card-infos">
-                        <span class="category-badge">${p.categorie}</span>
-                        ${marqueDisplay}
-                    </div>
+    // Ajout du produit avec le tracking GA4 sur l'ensemble de la carte
+    // On utilise une balise <a> englobante pour rendre toute la carte cliquable
+    conteneur.innerHTML += `
+    <a href="${p.lienBBD}" 
+       target="_blank" 
+       class="card-link" 
+       onclick="gtag('event', 'clic_produit', {'nom_produit': '${p.nom.replace(/'/g, "\\'")}', 'categorie': '${p.categorie}'});">
+        <div class="card">
+            <span class="price">${p.prix}</span>
+            <img src="${p.image}" alt="${p.nom}" onerror="this.style.display='none'">
+            
+            <div class="card-content">
+                <h3>${p.nom}</h3>
+                <div class="card-infos">
+                    <span class="category-badge">${p.categorie}</span>
+                    ${marqueDisplay}
                 </div>
-                
-                <a href="${p.lienBBD}" 
-                   target="_blank" 
-                   class="btn" 
-                   onclick="gtag('event', 'clic_produit', {'nom_produit': '${p.nom.replace(/'/g, "\\'")}', 'categorie': '${p.categorie}'});">
-                   Voir le lien
-                </a>
-            </div>`;
-        });
+            </div>
+        </div>
+    </a>`;
+});
     });
 }
 
