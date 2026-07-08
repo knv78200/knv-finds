@@ -235,8 +235,8 @@ header { padding: 30px 10%; }
     #liste-produits { 
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        gap: 8px; 
-        padding: 8px 10px; 
+        gap: 12px; 
+        padding: 10px 15px; 
         width: 100%;
         box-sizing: border-box;
     } 
@@ -244,49 +244,49 @@ header { padding: 30px 10%; }
     /* 3. CARTES COMME SUR LA PHOTO (Images collées aux bords) */
     .card { 
         padding: 0; /* SUPPRESSION DU PADDING : l'image touche les bords */
-        border-radius: 10px;
+        border-radius: 12px;
         width: 100%;
         box-sizing: border-box; 
         overflow: hidden; /* Coupe ce qui dépasse des coins arrondis */
     }
     
-    /* Image plus compacte, ratio plus carré */
+    /* L'image prend un aspect plus carré et imposant */
     .card img { 
-        height: 105px; 
+        height: 150px; 
         width: 100%;
-        border-radius: 10px 10px 0 0; /* Arrondi seulement en haut */
+        border-radius: 12px 12px 0 0; /* Arrondi seulement en haut */
         margin-bottom: 0; 
     }
     
     /* On remet un peu d'espace autour du texte en bas de l'image */
     .card-content {
-        padding: 6px 8px;
+        padding: 8px;
         width: 100%;
         box-sizing: border-box;
         overflow: hidden; /* Empêche tout débordement */
     }
     
     .price { 
-        top: 6px; 
-        left: 6px; 
-        padding: 2px 7px; 
-        font-size: 0.65rem; 
-        border-radius: 5px; 
+        top: 8px; 
+        left: 8px; 
+        padding: 3px 8px; 
+        font-size: 0.7rem; 
+        border-radius: 6px; 
     }
     
     .card h3 { 
-        font-size: 0.72rem; 
-        margin: 3px 0; 
+        font-size: 0.8rem; 
+        margin: 4px 0; 
         white-space: nowrap !important;     /* Interdit le passage à la ligne */
         overflow: hidden !important;        /* Cache le texte en trop */
         text-overflow: ellipsis !important; /* Ajoute les 3 petits points */
         display: block;
     }
     
-    .card-infos { gap: 3px; margin-top: 4px; flex-wrap: wrap; }
+    .card-infos { gap: 4px; margin-top: 6px; flex-wrap: wrap; }
     .category-badge, .brand-badge { 
-        font-size: 0.5rem; 
-        padding: 2px 5px; 
+        font-size: 0.55rem; 
+        padding: 3px 6px; 
         border-radius: 4px; 
     }
     
