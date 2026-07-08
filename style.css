@@ -259,6 +259,9 @@ header { padding: 30px 10%; }
     /* On remet un peu d'espace autour du texte en bas de l'image */
     .card-content {
         padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden; /* Empêche tout débordement */
     }
     
     .price { 
@@ -269,7 +272,14 @@ header { padding: 30px 10%; }
         border-radius: 6px; 
     }
     
-    .card h3 { font-size: 0.8rem; margin: 4px 0; }
+    .card h3 { 
+        font-size: 0.8rem; 
+        margin: 4px 0; 
+        white-space: nowrap !important;     /* Interdit le passage à la ligne */
+        overflow: hidden !important;        /* Cache le texte en trop */
+        text-overflow: ellipsis !important; /* Ajoute les 3 petits points */
+        display: block;
+    }
     
     .card-infos { gap: 4px; margin-top: 6px; flex-wrap: wrap; }
     .category-badge, .brand-badge { 
