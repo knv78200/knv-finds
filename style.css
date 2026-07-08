@@ -44,7 +44,7 @@ select:hover { border-color: var(--accent); cursor: pointer; }
     border-left: 3px solid var(--accent); padding-left: 15px; text-transform: uppercase; letter-spacing: 1px;
 }
 
-/* GRILLE RÉGLÉE : espacement harmonisé */
+/* Grille principale (Desktop) */
 #liste-produits { 
     display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
@@ -54,17 +54,24 @@ select:hover { border-color: var(--accent); cursor: pointer; }
     margin: auto; 
 }
 
-/* Cartes produits (Structure intacte) */
+/* Lien global de la carte */
+.card-link {
+    text-decoration: none !important;
+    color: inherit;
+    display: block;
+}
+
+/* Cartes produits */
 .card { 
     background: var(--card-bg); 
     border-radius: 16px; 
-    padding: 12px; /* Réduit pour moins de vide */
+    padding: 16px; 
     border: 1px solid rgba(255,255,255,0.05); 
     position: relative; 
     backdrop-filter: blur(8px);
     display: flex; 
     flex-direction: column;
-    height: auto; /* La carte s'adapte au contenu, plus de vide */
+    height: auto; /* S'adapte au contenu, pas de vide */
     transition: 0.3s;
 }
 
@@ -76,79 +83,52 @@ select:hover { border-color: var(--accent); cursor: pointer; }
 
 .card img { 
     width: 100%; 
-    height: 150px; /* Réduit un peu la hauteur si tu veux des cartes plus petites */
+    height: 180px; 
     object-fit: cover; 
     border-radius: 10px; 
-    margin-bottom: 8px; /* MODIFICATION : Réduction de l'espace sous l'image */
+    margin-bottom: 12px; 
 }
 
-.card-content { 
-    display: flex; 
-    flex-direction: column; 
-    padding: 0; 
-}
+.card-content { display: flex; flex-direction: column; padding: 0 5px; }
 
+/* Prix */
 .price { 
     position: absolute; top: 15px; left: 15px; 
     background: var(--gradient-accent); color: #fff; font-weight: 700; 
     padding: 3px 10px; border-radius: 6px; font-size: 0.75rem; z-index: 10;
 }
 
+/* Titre du produit */
 .card h3 { 
     font-size: 0.85rem; 
     margin: 5px 0 5px 0; 
     text-align: left; 
     font-weight: 600; 
-    
-    /* Ces 3 lignes assurent l'effet ... */
-    white-space: nowrap;      /* Force le texte sur une seule ligne */
-    overflow: hidden;         /* Cache ce qui dépasse */
-    text-overflow: ellipsis;  /* Ajoute les ... à la fin */
-}
-
-.card h3:hover {
-    white-space: normal; /* Affiche tout le texte au survol */
-}
-
-.card-link {
+    color: #e0e0e0;
     text-decoration: none !important;
-    color: inherit;
-    display: block;
+    white-space: nowrap;      
+    overflow: hidden;         
+    text-overflow: ellipsis;  
 }
 
+/* Conteneur des Badges */
 .card-infos { 
     display: flex; 
+    justify-content: flex-start; 
+    align-items: center;
     gap: 8px; 
     margin-top: 10px; 
 }
 
-.category-badge { 
-    font-size: 0.65rem; 
-    padding: 4px 10px; /* Un peu plus de padding pour aérer */
-    border-radius: 6px; 
-    text-transform: uppercase; 
-    font-weight: 700;
-    background: #161622; /* Fond sombre très subtil */
-    color: #94a3b8; /* Texte gris/bleuté clair */
-    border: 1px solid #2a2a3e; /* Bordure très fine et discrète */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Légère profondeur */
+.category-badge, .brand-badge { 
+    font-size: 0.65rem; padding: 4px 10px; border-radius: 6px; 
+    text-transform: uppercase; font-weight: 700;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+.category-badge { background: #161622; color: #94a3b8; border: 1px solid #2a2a3e; }
+.brand-badge { background: rgba(0, 242, 255, 0.1); color: var(--accent); border: 1px solid rgba(0, 242, 255, 0.3); }
 
-.brand-badge { 
-    font-size: 0.65rem; 
-    padding: 4px 10px; /* Même padding que la catégorie */
-    border-radius: 6px; /* Même forme */
-    text-transform: uppercase; 
-    font-weight: 700;
-    background: rgba(0, 242, 255, 0.1); /* Fond cyan très léger */
-    color: var(--accent); /* Texte Cyan vif */
-    border: 1px solid rgba(0, 242, 255, 0.3); /* Bordure cyan subtile */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
-}
-
-.category-badge { background: #1a1a2e; color: #a0a0a0; }
-.brand-badge { background: var(--accent); color: #000; }
-
+/* Top bar */
 .top-bar {
     display: flex;
     justify-content: center;
@@ -189,18 +169,51 @@ header { padding: 30px 10%; }
     border-radius: 4px;
     transition: 0.3s;
 }
-
-.highlight-link:hover {
-    background: var(--accent);
-    color: #000;
-}
+.highlight-link:hover { background: var(--accent); color: #000; }
 
 .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
 .modal-content { position: relative; margin: 10% auto; width: 80%; max-width: 800px; }
 .modal-content iframe { width: 100%; height: 450px; border-radius: 8px; }
 .close { position: absolute; top: -30px; right: 0; color: white; font-size: 30px; cursor: pointer; }
 
+/* ==========================================
+   OPTIMISATION MOBILE (Écrans < 600px)
+   ========================================== */
 @media (max-width: 600px) { 
-    #liste-produits { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 10px; } 
-    h1 { font-size: 1.4rem; letter-spacing: 1px; }
+    header { padding: 15px 5%; }
+    h1 { font-size: 1.4rem; letter-spacing: 1px; margin-bottom: 10px; }
+    
+    /* Rapproche et ajuste les menus de recherche/sélection */
+    .controls { gap: 8px; margin: 10px; }
+    input, select { padding: 8px 12px; font-size: 0.8rem; width: 100%; max-width: 100%; }
+    
+    /* Grille en 2 colonnes bien aérée sans gaspiller d'espace */
+    #liste-produits { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 12px; 
+        padding: 10px; 
+    } 
+    
+    /* Optimisation de la carte sur mobile pour éviter le vide */
+    .card { 
+        padding: 10px; 
+        border-radius: 12px;
+    }
+    
+    /* Réduction cruciale de la hauteur d'image pour compacter la carte */
+    .card img { 
+        height: 125px; 
+        margin-bottom: 8px; 
+        border-radius: 8px;
+    }
+    
+    /* Textes et prix légèrement plus compacts pour mobile */
+    .price { top: 12px; left: 12px; padding: 2px 6px; font-size: 0.65rem; }
+    .card h3 { font-size: 0.75rem; margin: 4px 0; }
+    
+    /* Ajustement des badges pour qu'ils restent fluides sur petit écran */
+    .card-infos { gap: 4px; margin-top: 6px; flex-wrap: wrap; }
+    .category-badge, .brand-badge { font-size: 0.55rem; padding: 3px 6px; border-radius: 4px; }
+    
+    .top-bar { gap: 15px; padding: 10px; font-size: 0.65rem; }
 }
